@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t jahnvigupta29/cicd-k8s-project:latest .
+          docker build -t janhvigupta29/cicd-k8s-project:latest .
 
       - name: Push Docker image
         run: |
-          docker push jahnvigupta29/cicd-k8s-project:latest
+          docker push janhvigupta29/cicd-k8s-project:latest

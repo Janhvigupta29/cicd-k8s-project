@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-      image: dockerhub-janhvigupta29/cicd-k8s-app:latest
+      image: janhvigupta29/cicd-k8s-app:latest
       imagePullPolicy: Always
       ports:
       - containerPort: 3000

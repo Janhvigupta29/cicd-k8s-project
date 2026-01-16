@@ -66,7 +66,9 @@ The CI pipeline is implemented using GitHub Actions and runs automatically on ev
   - Industry best practice (avoids latest tag problems)<br>
 
 **Example image tag:**<br>
-      janhvigupta29/cicd-k8s-project:7b3e7bff33d13836eec264da17af095ace67f2c
+```text
+janhvigupta29/cicd-k8s-project:7b3e7bff33d13836eec264da17af095ace67f2c
+```
 
 ------
 
@@ -81,9 +83,11 @@ After a successful CI build, the application is deployed to a Kubernetes cluster
   - Application remains available during deployment<br>
 
 **Key Deployment Commands**<br>
+```text
 kubectl set image deployment/cicd-app app=janhvigupta29/cicd-k8s-project:<commit-sha><br>
 kubectl rollout status deployment cicd-app<br>
 kubectl scale deployment cicd-app --replicas=2<br>
+```
 
 **Deployment Features**
   - Versioned Docker images<br>
@@ -115,7 +119,9 @@ Deployment success is verified by:-<br>
   - Image tag confirmation in running pods<br>
 
 The following approach avoids unreliable browser-based verification and reflects real production practices.<br>
-    kubectl describe pod <pod-name>
+```text
+kubectl describe pod <pod-name>
+```
 
 -----
 

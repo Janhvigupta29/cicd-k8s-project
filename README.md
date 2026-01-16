@@ -5,7 +5,7 @@ The pipeline follows real-world DevOps practices, including versioned Docker ima
 ------
 
 ## Project Overview
-The goal of this project is to implement a reliable CI/CD workflow where:
+The goal of this project is to implement a reliable CI/CD workflow where:<br>
   -Code changes automatically trigger a CI pipeline<br>
   -A Docker image is built and pushed to Docker Hub<br>
   -Kubernetes deploys the new image using rolling updates<br>
@@ -108,35 +108,35 @@ kubectl scale deployment cicd-app --replicas=2<br>
 ## Verification & Debugging
 
 Deployment success is verified by:-<br>
-  ~Kubernetes rollout history
-  ~ReplicaSet changes
-  ~Pod recreation
-  ~Image tag confirmation in running pods
+  ~Kubernetes rollout history<br>
+  ~ReplicaSet changes<br>
+  ~Pod recreation<br>
+  ~Image tag confirmation in running pods<br>
 
-The following approach avoids unreliable browser-based verification and reflects real production practices.
+The following approach avoids unreliable browser-based verification and reflects real production practices.<br>
     kubectl describe pod <pod-name>
 
 -----
 
 ## Key Learnings 📖
-  -Difference between CI and CD
-  -Why the latest Docker tag should be avoided
-  -How Kubernetes rolling deployments work internally
-  -How to debug real CI/CD failures
-  -Importance of versioned artifacts in deployment pipelines
+  -Difference between CI and CD<br>
+  -Why the latest Docker tag should be avoided<br>
+  -How Kubernetes rolling deployments work internally<br>
+  -How to debug real CI/CD failures<br>
+  -Importance of versioned artifacts in deployment pipelines<br>
 
 ## Project Status 🎯
-  -CI Pipeline: ✅ Complete
-  -CD Pipeline: ✅ Complete
-  -Docker Hub Integration: ✅ Complete
-  -Kubernetes Deployment: ✅ Complete
-  -Production Practices: ✅ Followed
+  -CI Pipeline: ✅ Complete<br>
+  -CD Pipeline: ✅ Complete<br>
+  -Docker Hub Integration: ✅ Complete<br>
+  -Kubernetes Deployment: ✅ Complete<br>
+  -Production Practices: ✅ Followed<br>
 
 -----
 
 ## Conclusion 🏁
-This project implements a real, production-style CI/CD pipeline using modern DevOps tools.
-It emphasizes correctness, debuggability, and industry best practices over shortcuts.
+This project implements a real, production-style CI/CD pipeline using modern DevOps tools.<br>
+It emphasizes correctness, debuggability, and industry best practices over shortcuts.<br>
 
 -----
 

@@ -4,6 +4,12 @@ metadata:
   name: cicd-app
 spec:
   replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+
   selector:
     matchLabels:
       app: cicd-app
@@ -13,8 +19,8 @@ spec:
         app: cicd-app
     spec:
       containers:
-      - name: app
-      image: janhvigupta29/cicd-k8s-app:latest
-      imagePullPolicy: Always
-      ports:
-      - containerPort: 3000
+        - name: app
+          image: janhvigupta29/cicd-k8s-project:${IMAGE_TAG}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000

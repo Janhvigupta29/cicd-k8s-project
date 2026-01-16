@@ -25,4 +25,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push janhvigupta29/cicd-k8s-project:${{ github.sha }} .
+          docker push janhvigupta29/cicd-k8s-project:${{ github.sha }}
